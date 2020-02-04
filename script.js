@@ -1,9 +1,11 @@
 let dice = document.getElementById("dice")
 let score1 = document.getElementById("score")
 let count1 = document.getElementById("count")
+let win1 = document.getElementById("win")
 
 let score = 0
 let count = 0
+let win = 0
 
 document.getElementById("button").addEventListener("click", () => {
     let num = Math.ceil(Math.random()*6)
@@ -36,6 +38,8 @@ document.getElementById("button").addEventListener("click", () => {
     }
 
     if(score >= 21){
+        win++
+        win1.textContent = win
         score1.textContent = "YOU WON"
         score = 0
         count = 0
