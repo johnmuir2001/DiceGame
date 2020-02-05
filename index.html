@@ -8,11 +8,24 @@
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <img id="dice" src="https://upload.wikimedia.org/wikipedia/commons/c/c5/Dice-0.png" alt="dice">
-    <p> Your score:<h1 id="score">0</h1> </p>
-    <p> Rolls: <h1 id="count">0</h1> </p>
-    <p> Wins: <h1 id="win">0</h1> </p>
-    <button id="button">Roll</button>
+    <div class="diceContainer">
+        <div id="dice">
+            <div class="cubeFace cubeFace--front"></div>
+            <div class="cubeFace cubeFace--back"></div>
+            <div class="cubeFace cubeFace--right"></div>
+            <div class="cubeFace cubeFace--left"></div>
+            <div class="cubeFace cubeFace--top"></div>
+            <div class="cubeFace cubeFace--bottom"></div>
+        </div>
+    </div>
+    <div class="container">
+        <p> Your score:<h3 id="score">0</h3> </p>
+        <p> Rolls: <h3 id="count">0</h3> </p>
+        <p> Wins: <h3 id="win">0</h3> </p>
+    </div>
+    <div class="container">
+        <button id="button">Roll</button>
+    </div>
     <script src="script.js"></script>
 </body>
 </html>
