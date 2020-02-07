@@ -10,8 +10,9 @@ button{
     font-family: 'Brandon Grotesque' ,Arial,sans-serif;
     letter-spacing: .14em;
     text-transform: uppercase;
-    font-size: 25px;
-    font-weight: 700;
+    font-size: 20px;
+    font-weight: 400;
+    margin: 10px;
     height: 70px;
     width: 130px;
     border-radius: 10px;
@@ -28,18 +29,117 @@ button:active{
     box-shadow: 0 9px 0 #93d4f5,0px 9px 5px black;
     top: 10px;
 }
+#startOver{
+    background-color: #ff7a7a;
+    box-shadow: 0px 19px 0px #ff4f4f,0px 20px 8px 1px black;
+}
+#startOver:active{
+    position: relative;
+    box-shadow: 0 9px 0 #ff4f4f,0px 9px 5px black;
+    top: 10px;
+}
+#button2{
+    font-family: 'Brandon Grotesque' ,Arial,sans-serif;
+    letter-spacing: .14em;
+    text-transform: uppercase;
+    font-size: 20px;
+    font-weight: 400;
+    height: 70px;
+    width: 130px;
+    border-radius: 10px;
+    transform: rotate3d(1, 0, 0, 30deg);
+    background-color: #93ede0;
+    box-shadow: 0px 19px 0px #93d4f5,0px 20px 8px 1px black;
+    display: none;
+}
+#button2:focus {
+    border: none;
+    outline: none;
+}
+#button2:active{
+    position: relative;
+    box-shadow: 0 9px 0 #93d4f5,0px 9px 5px black;
+    top: 10px;
+}
 p, h3{
     text-align: center;
     margin: 20px;
 }
-.container{
-    margin: 50px;
+.statContainer{
+    margin: 20px 50px;
     display: flex;
     flex-direction: row;
     justify-content: center;
     flex-wrap: wrap;
 }
-
+.statContainer2{
+    margin: 20px 50px;
+    padding: 20px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+@media only screen and (max-width: 700px){
+    .statContainer{
+        margin: 10px;
+        display: flex;
+        padding: 10px;
+        flex-direction: row;
+        justify-content: center;
+        flex-wrap: wrap;
+    }
+    .statContainer2{
+        margin: 10px;
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        flex-wrap: wrap;
+    }
+    p, h3{
+        text-align: center;
+        margin: 5px;
+    }
+}
+.buttonContainer{
+    margin: 20px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+.buttonContainer2{
+    margin: 20px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+.players{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
+.title{
+    display: none;
+}
+.player1{
+    display: flex;
+    flex-direction: column;
+    background-color: #d2fcf6;
+    margin: 1%;
+    padding: 10px;
+    width: 45%;
+}
+.player2{
+    margin: 1%;
+    padding: 10px;
+    display: flex;
+    width: 45%;
+    flex-direction: column;
+    background-color: none;
+    display: none;
+}
 /* DICE  */
 .diceContainer{
     width: 200px;
