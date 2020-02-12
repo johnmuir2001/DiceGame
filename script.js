@@ -132,6 +132,9 @@ player2Button.addEventListener("click", () => {
 
 startOver.addEventListener("click", () => {
     player2.style.display = "none";
+    player1.style.backgroundColor = "#d2fcf6"
+    player2Button.style.display = "block";
+    button.style.display = "block"
     dice1.style.transform = "translateZ(-100px) rotateX(-45deg) rotateY(-45deg)"
     score = 0
     score1.textContent = score
@@ -139,4 +142,11 @@ startOver.addEventListener("click", () => {
     count1.textContent = count
     win = 0
     win1.textContent = win
+
+    p2score = 0
+    score2.textContent = score
+    p2count = 0
+    count2.textContent = count
+    p2win = 0
+    win2.textContent = win
 })
